@@ -10,11 +10,41 @@ reader should attack).
 
 ## Status
 
-Pre-event (committed Fri 20 Nov 2026). Strategy phase complete: the pick survived
-a 100-seed blind ideation funnel, a collision audit over 980 scraped competitor
-analogues, and a 10/10 winner-pattern validation. Build happens on event day.
-**Registration approved** (Mistral acceptance email, 20 Nov). Be in by 08:30 with the
-Luma QR and ID; submission hard stop 18:00. Day plan: command-centre/11-execution-tracker.md.
+Post-event, updated Sun 22 Nov 2026. The team built ChonkVid and pitched it at Fora
+Chancery House on 21 Nov, a five-person entry aimed at Track_01, Bonus_02 and
+Special_03.
+
+**Result: did not place, and did not make the finalists.** No prize, no credits.
+
+What was actually built and measured on the day, taken from the team run rather than
+from projections:
+
+| Claim | Number |
+|---|---|
+| Live run | 40 agents on Ministral 8B, 39 infected |
+| Detector control arm | 0/30 false positives |
+| One-hop spread | 28/30, p 0.93, CI 0.79-0.98 |
+| Hardening the whole fleet | 30/30 stopped |
+| Hardening 20% of the fleet | epidemic survived, R 1.7 against a 40-60% herd threshold |
+| Attack rate | 0.96, against 0.76 random and 0.60 targeted |
+| Vaccine on an unseen payload | 0.67 to 0.23 |
+| Voxtral voice channel | 20/20 through speech, 0/20 after the vaccine |
+
+This repository is now a record of the attempt rather than a submission: the
+pre-event strategy, the execution centre, and the evidence behind those numbers. The
+submitted build lives in the team repo, Maya2314/Oh-Lawd-He-Comin.
+
+### Honest retrospective
+
+- **The demo lagged the build.** At submission the Cloudflare worker was still
+  serving the pre-diagnostic build while the VPS on port 8793 had the fixed version,
+  so anyone following the QR link could have seen an older app than the one measured.
+- **Most of the preparation went into choosing the idea**, through a 100-seed funnel
+  and a collision audit over 980 competitor analogues. The judging rewarded the pitch
+  and a working demo, so that work bought confidence rather than points.
+- **We pitched the measured result together with its limits**: targeted hardening beat
+  random in only 5 of 8 seeds, and the herd threshold was never reached. Honest, and
+  harder to land in five minutes than one clean claim.
 
 ## Contents
 
